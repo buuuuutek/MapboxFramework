@@ -7,58 +7,145 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5959A2DCB67D8CCD03071460231FD8C6 /* Pods-MapboxFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 21FCD4E81B4746C2472A06F00CC999C6 /* Pods-MapboxFramework-dummy.m */; };
-		7CDE4832FFA9C8E83F7DDB2E1794FFBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		61B79187E696E1B4F15844DB604B48E0 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE9D0D9EAFAABEF7382F32935F0948A /* SwiftyJSON.swift */; };
+		7B79084450BCF746038AE3D919531415 /* Pods-MapboxFramework-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5F317E150C53287C73E3A9FE79842D0 /* Pods-MapboxFramework-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACD7D08D0B9ACA594FE80B1E783E5432 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B0BE98842EFBEA2BCD5932387E3D392E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		D62986DC23B15B5DABA6CEB7A961F2B8 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F7A88F013D269B6200594121F17A4C2 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F83F7E7E1B1555CC009784DFF8A540A4 /* Pods-MapboxFramework-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84EABCD24856335970CA06E73746D76B /* Pods-MapboxFramework-dummy.m */; };
+		FA7FCFE7C554DC71C55778204AFED3C4 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D0DAF09C2DD2CF79C9750522D63CC55E /* SwiftyJSON-dummy.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		1FF7DA33D479128DCFC02EE843E6027E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64836E427D7FC998E31222C132CA4025;
+			remoteInfo = SwiftyJSON;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		18EEE90B01477ADB3A226F499EBAB201 /* Pods-MapboxFramework-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MapboxFramework-acknowledgements.plist"; sourceTree = "<group>"; };
-		21FCD4E81B4746C2472A06F00CC999C6 /* Pods-MapboxFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MapboxFramework-dummy.m"; sourceTree = "<group>"; };
-		564B80CDF8C9059AC54EBB6FFFE7E835 /* Pods-MapboxFramework-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MapboxFramework-frameworks.sh"; sourceTree = "<group>"; };
+		069429B2A27687B8058F8BE295DD82B1 /* Pods-MapboxFramework-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MapboxFramework-frameworks.sh"; sourceTree = "<group>"; };
+		07D9886EE66CA44F4336DAFBF6AC9BB5 /* Pods-MapboxFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MapboxFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		0A243BB073CB69A0B48913B2E854571F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AA5FAAF2FAEE42449E3EAB136949DB0 /* Pods-MapboxFramework-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MapboxFramework-resources.sh"; sourceTree = "<group>"; };
+		2B276CFFB906BF5803BF2CF6E642F574 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		2F7A88F013D269B6200594121F17A4C2 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		316050B8775F86864CF9F49DAA1625BF /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		328F5AF6B5D0E689515F2B3C49B307E6 /* Pods-MapboxFramework-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MapboxFramework-acknowledgements.plist"; sourceTree = "<group>"; };
+		358F8005B26CFED0679FBFB8FB3DE01E /* Pods-MapboxFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MapboxFramework.release.xcconfig"; sourceTree = "<group>"; };
+		53A66BD82F30002EA74657F93A58D23E /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6C03616AD8E09916447325E3C9F1F376 /* libPods-MapboxFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MapboxFramework.a"; path = "libPods-MapboxFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		82D8567FB48746633E0BC0ACB51F03EC /* Pods-MapboxFramework-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MapboxFramework-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7CE9D0D9EAFAABEF7382F32935F0948A /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		84EABCD24856335970CA06E73746D76B /* Pods-MapboxFramework-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MapboxFramework-dummy.m"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C530C514F395A9DCE99E4CED7F2782C1 /* Pods-MapboxFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MapboxFramework.release.xcconfig"; sourceTree = "<group>"; };
-		DD1059DAA15EE25DA30F23930E373B20 /* Pods-MapboxFramework-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MapboxFramework-resources.sh"; sourceTree = "<group>"; };
-		E3F3DEAC62E89F9ABAA5BE6404D5548E /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
-		FD3D5419EAB4DD3887737B791AE4B105 /* Pods-MapboxFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MapboxFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		AB44220A7951551B89410D2D4B2B56B5 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		B62883103CC502B60735BDEF351EA0F8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0DAF09C2DD2CF79C9750522D63CC55E /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		DC06A02E2C948D9B10F65FC88CF37EEA /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Mapbox.framework; path = dynamic/Mapbox.framework; sourceTree = "<group>"; };
+		E37BAF1861D3DBCCC73EAD4A542AB122 /* Pods_MapboxFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MapboxFramework.framework; path = "Pods-MapboxFramework.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E5F317E150C53287C73E3A9FE79842D0 /* Pods-MapboxFramework-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MapboxFramework-umbrella.h"; sourceTree = "<group>"; };
+		F460B169F091D0C44359C2D02D8B40E5 /* Pods-MapboxFramework-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MapboxFramework-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FC8FB30A1B5F3BC0F3B9F2D53EABDC34 /* Pods-MapboxFramework.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MapboxFramework.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		03AF9F8D9239EB140AF98AFCAB7B3F6E /* Frameworks */ = {
+		4CEC567EE0646959EA35D7C620B49493 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CDE4832FFA9C8E83F7DDB2E1794FFBD /* Foundation.framework in Frameworks */,
+				B0BE98842EFBEA2BCD5932387E3D392E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA4EE93D59B36FC33B7D673BDA4EF8F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACD7D08D0B9ACA594FE80B1E783E5432 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C6EC080F03299FD956AFA024965C4A0 /* Products */ = {
+		261FB30ECDED134C06FD881ADB6E6105 /* SwiftyJSON */ = {
 			isa = PBXGroup;
 			children = (
-				6C03616AD8E09916447325E3C9F1F376 /* libPods-MapboxFramework.a */,
+				7CE9D0D9EAFAABEF7382F32935F0948A /* SwiftyJSON.swift */,
+				7A7629DDBE95223AF6A1E4D5998C1E05 /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		34553125957241DA4180B313DD508B31 /* Pods-MapboxFramework */ = {
+			isa = PBXGroup;
+			children = (
+				0A243BB073CB69A0B48913B2E854571F /* Info.plist */,
+				FC8FB30A1B5F3BC0F3B9F2D53EABDC34 /* Pods-MapboxFramework.modulemap */,
+				F460B169F091D0C44359C2D02D8B40E5 /* Pods-MapboxFramework-acknowledgements.markdown */,
+				328F5AF6B5D0E689515F2B3C49B307E6 /* Pods-MapboxFramework-acknowledgements.plist */,
+				84EABCD24856335970CA06E73746D76B /* Pods-MapboxFramework-dummy.m */,
+				069429B2A27687B8058F8BE295DD82B1 /* Pods-MapboxFramework-frameworks.sh */,
+				2AA5FAAF2FAEE42449E3EAB136949DB0 /* Pods-MapboxFramework-resources.sh */,
+				E5F317E150C53287C73E3A9FE79842D0 /* Pods-MapboxFramework-umbrella.h */,
+				07D9886EE66CA44F4336DAFBF6AC9BB5 /* Pods-MapboxFramework.debug.xcconfig */,
+				358F8005B26CFED0679FBFB8FB3DE01E /* Pods-MapboxFramework.release.xcconfig */,
+			);
+			name = "Pods-MapboxFramework";
+			path = "Target Support Files/Pods-MapboxFramework";
+			sourceTree = "<group>";
+		};
+		4B0BA25D8D4233681194D94EEE3F550E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				55B5D802B0558F99F885B5C05D5A7F4F /* Mapbox-iOS-SDK */,
+				261FB30ECDED134C06FD881ADB6E6105 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		51D162CA9650F154474BFE69DD79B3F6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				34553125957241DA4180B313DD508B31 /* Pods-MapboxFramework */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		55B5D802B0558F99F885B5C05D5A7F4F /* Mapbox-iOS-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				EC33A40369C408383ED570BC58472F7F /* Frameworks */,
+			);
+			name = "Mapbox-iOS-SDK";
+			path = "Mapbox-iOS-SDK";
+			sourceTree = "<group>";
+		};
+		7621550C099B2CE81D99C89EAD97AEAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E37BAF1861D3DBCCC73EAD4A542AB122 /* Pods_MapboxFramework.framework */,
+				316050B8775F86864CF9F49DAA1625BF /* SwiftyJSON.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3433746FBB20361F7C06EA7E60ED2F4A /* Frameworks */ = {
+		7A7629DDBE95223AF6A1E4D5998C1E05 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E3F3DEAC62E89F9ABAA5BE6404D5548E /* Mapbox.framework */,
+				B62883103CC502B60735BDEF351EA0F8 /* Info.plist */,
+				AB44220A7951551B89410D2D4B2B56B5 /* SwiftyJSON.modulemap */,
+				2B276CFFB906BF5803BF2CF6E642F574 /* SwiftyJSON.xcconfig */,
+				D0DAF09C2DD2CF79C9750522D63CC55E /* SwiftyJSON-dummy.m */,
+				53A66BD82F30002EA74657F93A58D23E /* SwiftyJSON-prefix.pch */,
+				2F7A88F013D269B6200594121F17A4C2 /* SwiftyJSON-umbrella.h */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3B6AD4FFE66908FCA51F294DF844D59F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C622644E73922BB231E29AB8457EFB83 /* Mapbox-iOS-SDK */,
-			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -66,33 +153,10 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				3B6AD4FFE66908FCA51F294DF844D59F /* Pods */,
-				0C6EC080F03299FD956AFA024965C4A0 /* Products */,
-				8D6501942B2005AADAD8610F1B4C922C /* Targets Support Files */,
+				4B0BA25D8D4233681194D94EEE3F550E /* Pods */,
+				7621550C099B2CE81D99C89EAD97AEAB /* Products */,
+				51D162CA9650F154474BFE69DD79B3F6 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8D6501942B2005AADAD8610F1B4C922C /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B4B0DA2352C83CDEFD5B7808F0A55A4A /* Pods-MapboxFramework */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		B4B0DA2352C83CDEFD5B7808F0A55A4A /* Pods-MapboxFramework */ = {
-			isa = PBXGroup;
-			children = (
-				82D8567FB48746633E0BC0ACB51F03EC /* Pods-MapboxFramework-acknowledgements.markdown */,
-				18EEE90B01477ADB3A226F499EBAB201 /* Pods-MapboxFramework-acknowledgements.plist */,
-				21FCD4E81B4746C2472A06F00CC999C6 /* Pods-MapboxFramework-dummy.m */,
-				564B80CDF8C9059AC54EBB6FFFE7E835 /* Pods-MapboxFramework-frameworks.sh */,
-				DD1059DAA15EE25DA30F23930E373B20 /* Pods-MapboxFramework-resources.sh */,
-				FD3D5419EAB4DD3887737B791AE4B105 /* Pods-MapboxFramework.debug.xcconfig */,
-				C530C514F395A9DCE99E4CED7F2782C1 /* Pods-MapboxFramework.release.xcconfig */,
-			);
-			name = "Pods-MapboxFramework";
-			path = "Target Support Files/Pods-MapboxFramework";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -103,15 +167,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C622644E73922BB231E29AB8457EFB83 /* Mapbox-iOS-SDK */ = {
-			isa = PBXGroup;
-			children = (
-				3433746FBB20361F7C06EA7E60ED2F4A /* Frameworks */,
-			);
-			name = "Mapbox-iOS-SDK";
-			path = "Mapbox-iOS-SDK";
-			sourceTree = "<group>";
-		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,24 +175,70 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		EC33A40369C408383ED570BC58472F7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC06A02E2C948D9B10F65FC88CF37EEA /* Mapbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		4237D5A67A2D11CB843483ED1D02E42D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D62986DC23B15B5DABA6CEB7A961F2B8 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		68F82BE4CC74A3F6A48191AC1720E146 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B79084450BCF746038AE3D919531415 /* Pods-MapboxFramework-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		BDE1F648AAB004C501F4626A30C4E824 /* Pods-MapboxFramework */ = {
+		64836E427D7FC998E31222C132CA4025 /* SwiftyJSON */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 03EA6DD033DABE0EEFE930576481389F /* Build configuration list for PBXNativeTarget "Pods-MapboxFramework" */;
+			buildConfigurationList = B4E38A59C67A04248BAA7B642575044E /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
 			buildPhases = (
-				D662FFC370886D40CB1A96A96C49CA40 /* Sources */,
-				03AF9F8D9239EB140AF98AFCAB7B3F6E /* Frameworks */,
+				916963AA1805EE4F2CDB3C9EFB21F4DE /* Sources */,
+				4CEC567EE0646959EA35D7C620B49493 /* Frameworks */,
+				4237D5A67A2D11CB843483ED1D02E42D /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 316050B8775F86864CF9F49DAA1625BF /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8E83CD5D4D0E3C2379E6E4B00B3E75EA /* Pods-MapboxFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B4D3739989C21F4D8156B9DC308087CF /* Build configuration list for PBXNativeTarget "Pods-MapboxFramework" */;
+			buildPhases = (
+				2DB8C41BD14AF0F43140E748403A9364 /* Sources */,
+				EA4EE93D59B36FC33B7D673BDA4EF8F9 /* Frameworks */,
+				68F82BE4CC74A3F6A48191AC1720E146 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97E9A687A46612CB78F45C35783956C0 /* PBXTargetDependency */,
+			);
 			name = "Pods-MapboxFramework";
 			productName = "Pods-MapboxFramework";
-			productReference = 6C03616AD8E09916447325E3C9F1F376 /* libPods-MapboxFramework.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = E37BAF1861D3DBCCC73EAD4A542AB122 /* Pods_MapboxFramework.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -156,65 +257,77 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 0C6EC080F03299FD956AFA024965C4A0 /* Products */;
+			productRefGroup = 7621550C099B2CE81D99C89EAD97AEAB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BDE1F648AAB004C501F4626A30C4E824 /* Pods-MapboxFramework */,
+				8E83CD5D4D0E3C2379E6E4B00B3E75EA /* Pods-MapboxFramework */,
+				64836E427D7FC998E31222C132CA4025 /* SwiftyJSON */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D662FFC370886D40CB1A96A96C49CA40 /* Sources */ = {
+		2DB8C41BD14AF0F43140E748403A9364 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5959A2DCB67D8CCD03071460231FD8C6 /* Pods-MapboxFramework-dummy.m in Sources */,
+				F83F7E7E1B1555CC009784DFF8A540A4 /* Pods-MapboxFramework-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		916963AA1805EE4F2CDB3C9EFB21F4DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA7FCFE7C554DC71C55778204AFED3C4 /* SwiftyJSON-dummy.m in Sources */,
+				61B79187E696E1B4F15844DB604B48E0 /* SwiftyJSON.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin XCBuildConfiguration section */
-		4063FA0E3691B85DAAFD87C4DB275D47 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FD3D5419EAB4DD3887737B791AE4B105 /* Pods-MapboxFramework.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
+/* Begin PBXTargetDependency section */
+		97E9A687A46612CB78F45C35783956C0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 64836E427D7FC998E31222C132CA4025 /* SwiftyJSON */;
+			targetProxy = 1FF7DA33D479128DCFC02EE843E6027E /* PBXContainerItemProxy */;
 		};
-		4CB9B61D5FCED939C66A746808262545 /* Release */ = {
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		27A08F29F299A31F1B58648EF2B575AA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C530C514F395A9DCE99E4CED7F2782C1 /* Pods-MapboxFramework.release.xcconfig */;
+			baseConfigurationReference = 358F8005B26CFED0679FBFB8FB3DE01E /* Pods-MapboxFramework.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MapboxFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MapboxFramework/Pods-MapboxFramework.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MapboxFramework;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -339,23 +452,129 @@
 			};
 			name = Debug;
 		};
+		95BF5FE7505970D2C6963B093E4C60E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07D9886EE66CA44F4336DAFBF6AC9BB5 /* Pods-MapboxFramework.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-MapboxFramework/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-MapboxFramework/Pods-MapboxFramework.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_MapboxFramework;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B34E435338F7E7A5D768DC2C87F8123C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B276CFFB906BF5803BF2CF6E642F574 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B78744C67FB18C6F06928CE48D5A5E84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B276CFFB906BF5803BF2CF6E642F574 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		03EA6DD033DABE0EEFE930576481389F /* Build configuration list for PBXNativeTarget "Pods-MapboxFramework" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				4063FA0E3691B85DAAFD87C4DB275D47 /* Debug */,
-				4CB9B61D5FCED939C66A746808262545 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5E66EDB50E7D107AAADE0DF38AF04C92 /* Debug */,
 				52963673ADAB30EC57625F006D328D81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4D3739989C21F4D8156B9DC308087CF /* Build configuration list for PBXNativeTarget "Pods-MapboxFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95BF5FE7505970D2C6963B093E4C60E6 /* Debug */,
+				27A08F29F299A31F1B58648EF2B575AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B4E38A59C67A04248BAA7B642575044E /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B78744C67FB18C6F06928CE48D5A5E84 /* Debug */,
+				B34E435338F7E7A5D768DC2C87F8123C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

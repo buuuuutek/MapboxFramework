@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02E439C943546E229BF5808F /* Pods_MapboxFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E13CF6B0E04833F6FA3CD62 /* Pods_MapboxFramework.framework */; };
+		244CA32C205BBA28008C93CF /* map.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 244CA32B205BBA28008C93CF /* map.geojson */; };
 		249282BB205AEE8D00FFA97B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249282BA205AEE8D00FFA97B /* AppDelegate.swift */; };
 		249282BD205AEE8D00FFA97B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249282BC205AEE8D00FFA97B /* ViewController.swift */; };
 		249282C0205AEE8D00FFA97B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249282BE205AEE8D00FFA97B /* Main.storyboard */; };
 		249282C2205AEE8D00FFA97B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 249282C1205AEE8D00FFA97B /* Assets.xcassets */; };
 		249282C5205AEE8D00FFA97B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249282C3205AEE8D00FFA97B /* LaunchScreen.storyboard */; };
-		994A4D2A543A6F4A7BB5BF81 /* libPods-MapboxFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B79F5FE14CED9192556001A9 /* libPods-MapboxFramework.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		244CA32B205BBA28008C93CF /* map.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map.geojson; sourceTree = SOURCE_ROOT; };
 		249282B7205AEE8D00FFA97B /* MapboxFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapboxFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		249282BA205AEE8D00FFA97B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		249282BC205AEE8D00FFA97B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -23,8 +25,8 @@
 		249282C1205AEE8D00FFA97B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		249282C4205AEE8D00FFA97B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		249282C6205AEE8D00FFA97B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E13CF6B0E04833F6FA3CD62 /* Pods_MapboxFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MapboxFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DC45AC6D28AA8FE8A78CED9 /* Pods-MapboxFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapboxFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-MapboxFramework/Pods-MapboxFramework.release.xcconfig"; sourceTree = "<group>"; };
-		B79F5FE14CED9192556001A9 /* libPods-MapboxFramework.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MapboxFramework.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7075BBE0CB43A217D7C1382 /* Pods-MapboxFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MapboxFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MapboxFramework/Pods-MapboxFramework.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -33,7 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				994A4D2A543A6F4A7BB5BF81 /* libPods-MapboxFramework.a in Frameworks */,
+				02E439C943546E229BF5808F /* Pods_MapboxFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,7 +45,7 @@
 		1CCDD9239CE4DA7EEC8D3070 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				B79F5FE14CED9192556001A9 /* libPods-MapboxFramework.a */,
+				4E13CF6B0E04833F6FA3CD62 /* Pods_MapboxFramework.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -73,6 +75,7 @@
 				249282BC205AEE8D00FFA97B /* ViewController.swift */,
 				249282BE205AEE8D00FFA97B /* Main.storyboard */,
 				249282C1205AEE8D00FFA97B /* Assets.xcassets */,
+				244CA32B205BBA28008C93CF /* map.geojson */,
 				249282C3205AEE8D00FFA97B /* LaunchScreen.storyboard */,
 				249282C6205AEE8D00FFA97B /* Info.plist */,
 			);
@@ -150,6 +153,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				244CA32C205BBA28008C93CF /* map.geojson in Resources */,
 				249282C5205AEE8D00FFA97B /* LaunchScreen.storyboard in Resources */,
 				249282C2205AEE8D00FFA97B /* Assets.xcassets in Resources */,
 				249282C0205AEE8D00FFA97B /* Main.storyboard in Resources */,
@@ -168,11 +172,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MapboxFramework/Pods-MapboxFramework-frameworks.sh",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework",
 				"${PODS_ROOT}/Mapbox-iOS-SDK/dynamic/Mapbox.framework.dSYM",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework",
 				"${DWARF_DSYM_FOLDER_PATH}/Mapbox.framework.dSYM",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -382,6 +388,7 @@
 				249282CB205AEE8D00FFA97B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
