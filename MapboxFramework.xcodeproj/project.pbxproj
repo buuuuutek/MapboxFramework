@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		02E439C943546E229BF5808F /* Pods_MapboxFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E13CF6B0E04833F6FA3CD62 /* Pods_MapboxFramework.framework */; };
 		244CA32C205BBA28008C93CF /* map.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 244CA32B205BBA28008C93CF /* map.geojson */; };
+		244CA330205C06B2008C93CF /* CustomAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 244CA32F205C06B2008C93CF /* CustomAnnotationView.swift */; };
 		249282BB205AEE8D00FFA97B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249282BA205AEE8D00FFA97B /* AppDelegate.swift */; };
 		249282BD205AEE8D00FFA97B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 249282BC205AEE8D00FFA97B /* ViewController.swift */; };
 		249282C0205AEE8D00FFA97B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 249282BE205AEE8D00FFA97B /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		244CA32B205BBA28008C93CF /* map.geojson */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = map.geojson; sourceTree = SOURCE_ROOT; };
+		244CA32F205C06B2008C93CF /* CustomAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAnnotationView.swift; sourceTree = "<group>"; };
 		249282B7205AEE8D00FFA97B /* MapboxFramework.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MapboxFramework.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		249282BA205AEE8D00FFA97B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		249282BC205AEE8D00FFA97B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			children = (
 				249282BA205AEE8D00FFA97B /* AppDelegate.swift */,
 				249282BC205AEE8D00FFA97B /* ViewController.swift */,
+				244CA32F205C06B2008C93CF /* CustomAnnotationView.swift */,
 				249282BE205AEE8D00FFA97B /* Main.storyboard */,
 				249282C1205AEE8D00FFA97B /* Assets.xcassets */,
 				244CA32B205BBA28008C93CF /* map.geojson */,
@@ -226,6 +229,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				249282BD205AEE8D00FFA97B /* ViewController.swift in Sources */,
+				244CA330205C06B2008C93CF /* CustomAnnotationView.swift in Sources */,
 				249282BB205AEE8D00FFA97B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

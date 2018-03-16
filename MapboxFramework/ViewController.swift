@@ -11,7 +11,9 @@ import Mapbox
 import SwiftyJSON
 
 class ViewController: UIViewController, MGLMapViewDelegate {
-
+    
+    var hexMarkerColor = String()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,31 +29,26 @@ class ViewController: UIViewController, MGLMapViewDelegate {
         }
     }
     
-    private func addAnnotations(from json: JSON, to map: MGLMapView) {
+    private func addAnnotations(from json: JSON, to mapView: MGLMapView) {
         
         let features = json["features"].arrayValue
         
         for item in features {
-            let name = item["properties"]["name"].stringValue
             
+            let newAnnotation = MGLPointAnnotation()
+            newAnnotation.title = item["properties"]["name"].stringValue
+
             let x = item["geometry"]["coordinates"][0].doubleValue
             let y = item["geometry"]["coordinates"][1].doubleValue
-            let coordinates = (x, y)
+            newAnnotation.coordinate = CLLocationCoordinate2D(latitude: y, longitude: x)
             
-            addAnnotations(to: map, by: coordinates, with: name)
+            hexMarkerColor = item["properties"]["marker-color"].stringValue
+            
+            mapView.addAnnotation(newAnnotation)
         }
     }
     
-    private func addAnnotations(to map: MGLMapView, by coordinates: (longitude: Double, latitude: Double), with name: String) {
-        
-        let newAnnotation = MGLPointAnnotation()
-        newAnnotation.coordinate = CLLocationCoordinate2D(latitude: coordinates.latitude, longitude: coordinates.longitude)
-        newAnnotation.title = name
-        
-        map.addAnnotation(newAnnotation)
-    }
-    
-    private func createMap() -> MGLMapView {
+    func createMap() -> MGLMapView {
         
         let mapView = MGLMapView(frame: view.bounds)
         mapView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
@@ -65,14 +62,34 @@ class ViewController: UIViewController, MGLMapViewDelegate {
     }
     
     func mapView(_ mapView: MGLMapView, viewFor annotation: MGLAnnotation) -> MGLAnnotationView? {
-        return nil
+        
+        // This example is only concerned with point annotations.
+        guard annotation is MGLPointAnnotation else {
+            return nil
+        }
+        
+        // Use the point annotation’s longitude value (as a string) as the reuse identifier for its view.
+        let reuseIdentifier = "\(annotation.coordinate.longitude)"
+        
+        // For better performance, always try to reuse existing annotations.
+        var annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: reuseIdentifier)
+        
+        // If there’s no reusable annotation view available, initialize a new one.
+        if annotationView == nil {
+            annotationView = CustomAnnotationView(reuseIdentifier: reuseIdentifier)
+            annotationView!.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
+            
+            annotationView!.backgroundColor = hexStringToUIColor(hex: hexMarkerColor)
+        }
+        
+        return annotationView
     }
     
     func mapView(_ mapView: MGLMapView, annotationCanShowCallout annotation: MGLAnnotation) -> Bool {
         return true
     }
     
-    private func getFileData(fileName: String, fileType: String) -> Data {
+    func getFileData(fileName: String, fileType: String) -> Data {
         var data = Data()
         
         if let path = Bundle.main.path(forResource: fileName, ofType: fileType) {
@@ -88,6 +105,28 @@ class ViewController: UIViewController, MGLMapViewDelegate {
         }
         
         return data
+    }
+    
+    func hexStringToUIColor (hex:String) -> UIColor {
+        var cString:String = hex.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
+        
+        if (cString.hasPrefix("#")) {
+            cString.remove(at: cString.startIndex)
+        }
+        
+        if ((cString.characters.count) != 6) {
+            return UIColor.gray
+        }
+        
+        var rgbValue:UInt32 = 0
+        Scanner(string: cString).scanHexInt32(&rgbValue)
+        
+        return UIColor(
+            red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+            green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+            blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+            alpha: CGFloat(1.0)
+        )
     }
 }
 
